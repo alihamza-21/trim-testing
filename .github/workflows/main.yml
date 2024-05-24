@@ -72,6 +72,6 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.2.0
         with:
           server: ftp.trimtesting.com
-          username: ${{ secrets.TRIMTESTING_FTP_USERNAME }}
-          password: ${{ secrets.TRIMTESTING_FTP_PASSWORD }}
+          username: ${{ secrets.TRIM_FTP_USERNAME }}
+          password: ${{ secrets.TRIM_FTP_PASSWORD }}
           server-dir: /
