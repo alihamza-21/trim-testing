@@ -56,7 +56,7 @@ jobs:
       - name: 📂 Sync files to development
         uses: SamKirkland/FTP-Deploy-Action@v4.2.0
         with:
-          server: 18.130.92.169.com
+          server: ftp.trimtesting.com
           username: ${{ secrets.LIVE_FTP_USERNAME }}
           password: ${{ secrets.LIVE_FTP_PASSWORD }}
           server-dir: /
@@ -71,7 +71,7 @@ jobs:
       - name: 📂 Sync files to production
         uses: SamKirkland/FTP-Deploy-Action@v4.2.0
         with:
-          server: 18.130.92.169.com
+          server: ftp.trimtesting.com
           username: ${{ secrets.TRIM_FTP_USERNAME }}
           password: ${{ secrets.TRIM_FTP_PASSWORD }}
           server-dir: /
